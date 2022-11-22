@@ -1,0 +1,48 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "npm install && parcel build index.html",
+    "dev": "parcel watch index.html",
+    "test": "jest",
+    "verify": "jest --collectCoverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6",
+    "babel-jest": "^29.2.2",
+    "jest": "^29.2.2",
+    "jest-environment-jsdom": "^29.2.2",
+    "jsdom": "^20.0.1",
+    "parcel": "^2.8.0",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "globals": {
+      "IS_REACT_ACT_ENVIRONMENT": true
+    },
+    "collectCoverageFrom": [
+      "**/*.{jsx,js}",
+      "!index.jsx",
+      "!coverage/**",
+      "!dist/**"
+    ]
+  }
+}

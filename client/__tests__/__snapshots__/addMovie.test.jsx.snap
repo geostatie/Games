@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`add game tests shows form 1`] = `"<form><h1> Submit new game </h1><div><label><strong>Title: </strong><input value=""></label></div><div><label><strong>Year: </strong><input value=""></label></div><div><label><strong>Plot: </strong><input value=""></label></div><button> Submit </button></form>"`;
